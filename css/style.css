@@ -48,9 +48,9 @@ main {
   color: #ffcd37ff !important;
 }
 
-/* --- LOGO --- */
+/* --- PROFILES --- */
 .bd-placeholder-img {
-  background: "../assets/imgs/gardens.jpeg";
+  background-image: url(assets/imgs/gardens.jpeg);
   font-size: 1.125rem;
   text-anchor: middle;
   -webkit-user-select: none;
@@ -63,3 +63,30 @@ main {
     font-size: 3.5rem;
   }
 }
+
+/* .profile-picture {
+  position:relative;
+  overflow:hidden;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.profile-picture img {
+  position:absolute;
+  height: auto;
+  width: auto;    
+  max-width:100%;
+}
+
+.centered img {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+<div class="profile-picture">
+  <img src="http://thumb9.shutterstock.com/display_pic_with_logo/239779/154705646/stock-photo-portrait-of-real-man-face-looking-at-camera-on-blue-background-154705646.jpg" alt="Profile - James Hales">
+</div>
+<div class="profile-picture centered">
+  <img src="http://thumb9.shutterstock.com/display_pic_with_logo/239779/154705646/stock-photo-portrait-of-real-man-face-looking-at-camera-on-blue-background-154705646.jpg" alt="Profile - James Hales">
+  </div> */
