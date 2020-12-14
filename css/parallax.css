@@ -38,6 +38,7 @@
 #welcome-message {
   background-image: url("../assets/imgs/gardens.jpeg");
   height: 100%;
+  grid-area: welcome;
 }
 
 /* Remove Bottom Margin from Jumbotron */

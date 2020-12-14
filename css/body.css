@@ -3,9 +3,13 @@
 /* Padding below the footer and lighter body text */
 
 .container {
-  padding-top: 2.5rem;
-  padding-bottom: 3rem;
   color: #5a5a5a;
+}
+
+.body-container {
+  height: 100%;
+  display: grid !important;
+  grid-template-rows: [welcome] 100% [rest] auto;
 }
 
 /* team CONTENT
