@@ -6,32 +6,17 @@ html {
   height: 100%;
 }
 
-#welcome-message {
-  background: url(../assets/imgs/gardens.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+/* --- COLORING --- */
+.navbar-dark {
+  color: #c60000ff;
 }
 
-/* --- PARALLAX --- */
-.parallax {
-  /* The image used */
-  background-image: url("../assets/imgs/gardens.jpeg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.cardinal {
+  background-color: #c60000ff;
 }
 
-@media only screen and (max-device-width: 1366px) {
-  /* --- Disables parallax on modile --- */
-  .parallax {
-    background-attachment: scroll;
-  }
+.gold {
+  background-color: #ffcd37ff;
 }
 
 /* --- LOGO --- */

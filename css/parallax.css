@@ -1,0 +1,45 @@
+/* Header Parallax Element Style*/
+.paral {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  /* --- Disables parallax on mobile devices --- */
+  .paral {
+    background-attachment: scroll;
+  }
+}
+
+/* Paragrapgh for Parallax Section */
+.paral p {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+}
+
+/* Heading for Parallax Section */
+.paral h1 {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  padding-top: calc(100% / 7);
+  line-height: 100px;
+}
+
+/* Images for Parallax Section */
+#welcome-message {
+  background-image: url("../assets/imgs/gardens.jpeg");
+  height: 100%;
+}
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron {
+  margin-bottom: 0;
+}
