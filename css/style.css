@@ -21,6 +21,12 @@ main {
   width: 70%;
 }
 
+@media only screen and (max-device-width: 600px) {
+  .smaller-width {
+    width: 90%;
+  }
+}
+
 /* --- COLORING --- */
 .navbar-dark {
   color: #c60000ff;

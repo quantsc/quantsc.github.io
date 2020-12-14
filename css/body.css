@@ -12,19 +12,20 @@
   grid-template-rows: [welcome] 100% [rest] auto;
 }
 
+/* Mission */
+#about-us {
+  margin-bottom: 1.5rem;
+}
+
 /* team CONTENT
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
-.team {
-  margin-top: 1.5rem;
-}
-
 .team .col-lg-3 {
-  margin-bottom: 1.5rem;
   text-align: center;
 }
 .team h2 {
   font-weight: 400;
+  margin-top: 1rem;
 }
 .team .col-lg-3 p {
   margin-right: 0.75rem;
@@ -34,10 +35,14 @@
 /* Featurettes
 ------------------------- */
 
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+.row {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
 }
 
+.featurette-divider {
+  margin: 0 0;
+}
 /* Thin out the team headings */
 .featurette-heading {
   font-weight: 300;

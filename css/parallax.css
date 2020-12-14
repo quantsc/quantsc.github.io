@@ -30,8 +30,28 @@
   color: white;
   font-size: 60px;
   text-align: center;
-  padding-top: calc(100% / 7);
+  padding-top: calc(100% / 9);
   line-height: 100px;
+}
+
+@media only screen and (min-device-width: 340px) and (min-device-height: 580px) {
+  .paral p {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .paral h1 {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-device-width: 339px) {
+  .paral p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .paral h1 {
+    font-size: 24px;
+  }
 }
 
 /* Content for Parallax Section */
@@ -39,7 +59,6 @@
   background-image: url("../assets/imgs/laNight.jpeg");
   height: 100%;
   grid-area: welcome;
-  padding-top: 15%;
   padding-bottom: 35%;
 }
 
