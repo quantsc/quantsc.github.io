@@ -34,11 +34,13 @@
   line-height: 100px;
 }
 
-/* Images for Parallax Section */
+/* Content for Parallax Section */
 #welcome-message {
-  background-image: url("../assets/imgs/gardens.jpeg");
+  background-image: url("../assets/imgs/laNight.jpeg");
   height: 100%;
   grid-area: welcome;
+  padding-top: 15%;
+  padding-bottom: 35%;
 }
 
 /* Remove Bottom Margin from Jumbotron */

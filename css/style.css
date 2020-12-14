@@ -8,6 +8,17 @@ html {
 
 main {
   grid-area: rest;
+  margin-top: 5%;
+}
+
+/* --- GLOBAL --- */
+.smaller-width {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
 }
 
 /* --- COLORING --- */
