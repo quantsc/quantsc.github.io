@@ -11,12 +11,20 @@ html {
   color: #c60000ff;
 }
 
-.cardinal {
+.cardinal-back {
   background-color: #c60000ff;
 }
 
-.gold {
+.gold-back {
   background-color: #ffcd37ff;
+}
+
+.cardinal-text {
+  background-color: #c60000ff;
+}
+
+.gold-text {
+  color: #ffcd37ff !important;
 }
 
 /* --- LOGO --- */
