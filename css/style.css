@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 html {
   margin: 0;
@@ -46,22 +50,6 @@ main {
 
 .gold-text {
   color: #ffcd37ff !important;
-}
-
-/* --- PROFILES --- */
-.bd-placeholder-img {
-  background-image: url(assets/imgs/gardens.jpeg);
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
 }
 
 /* FOOTER */

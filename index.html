@@ -45,10 +45,10 @@
                 <a class="nav-link" href="#about-us">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#events">Events</a>
+                <a class="nav-link" href="#above-events">Events</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#application">Apply</a>
+                <a class="nav-link" href="#above-application">Apply</a>
               </li>
             </ul>
           </div>
@@ -63,14 +63,6 @@
           <p>
             USC's primary community for students interested in quantitative
             finance and analysis.
-          </p>
-          <p>
-            <a
-              class="btn btn-lg btn-primary"
-              href="https://forms.gle/6f41MUVYzyK6H8aj8"
-              role="button"
-              >Apply Here &raquo;</a
-            >
           </p>
         </div>
       </div>
@@ -165,18 +157,24 @@
                 </p>
               </div>
               <div class="col-lg-3">
-                <svg
-                  class="bd-placeholder-img rounded-circle"
-                  width="140"
-                  height="140"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: 140x140"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <rect width="100%" height="100%" fill="#777" />
-                  <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                <svg width="140" height="140">
+                  <defs>
+                    <pattern
+                      id="image"
+                      x="0"
+                      y="0"
+                      patternUnits="userSpaceOnUse"
+                      height="140"
+                      width="140"
+                    >
+                      <image
+                        x="0"
+                        y="0"
+                        xlink:href="assets/imgs/gardens.jpeg"
+                      ></image>
+                    </pattern>
+                  </defs>
+                  <circle id="top" cx="70" cy="70" r="70" fill="url(#image)" />
                 </svg>
 
                 <h2>Kai Medina</h2>
@@ -187,7 +185,7 @@
 
             <!-- START THE FEATURETTES -->
 
-            <hr class="featurette-divider" />
+            <hr class="featurette-divider" id="above-events" />
 
             <div class="row featurette" id="events">
               <div class="col-md-7 order-md-2">
@@ -277,11 +275,15 @@
                 </div>
               </div>
               <div class="col-md-5 order-md-1">
-                <img src="assets/imgs/doheny.jpg" class="img-fluid mx-auto" />
+                <img
+                  src="assets/imgs/doheny.jpg"
+                  class="img-fluid mx-auto"
+                  alt="doheny"
+                />
               </div>
             </div>
 
-            <hr class="featurette-divider" />
+            <hr class="featurette-divider" id="above-application" />
             <div class="row featurette" id="application">
               <div class="col-md-7">
                 <h2 class="featurette-heading">Spring Recruitment</h2>
@@ -306,7 +308,11 @@
                 >
               </div>
               <div class="col-md-5">
-                <img src="assets/imgs/skyline.jpg" class="img-fluid mx-auto" />
+                <img
+                  src="assets/imgs/skyline.jpeg"
+                  class="img-fluid mx-auto"
+                  alt="skyline"
+                />
               </div>
             </div>
             <hr class="featurette-divider" />

@@ -1,6 +1,9 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+.main {
+  width: 100%;
+}
 
 .container {
   color: #5a5a5a;
@@ -8,7 +11,8 @@
 
 .body-container {
   height: 100%;
-  display: grid !important;
+  width: 100%;
+  display: inline-grid !important;
   grid-template-rows: [welcome] 100% [rest] auto;
 }
 
@@ -71,12 +75,14 @@
   margin: 0.5rem;
 }
 
+/* ACCORDION PANEL */
 .panel-group {
   margin-top: 1rem;
   border-style: solid;
   border-color: #ffcd37ff;
-  border-radius: 10%;
+  border-radius: 2rem;
   padding: 1rem;
+  width: 90%;
 }
 
 .panel-title {
@@ -90,6 +96,7 @@
 
 .panel-title a {
   color: black;
+  font-size: 20px;
 }
 
 .panel-body {
