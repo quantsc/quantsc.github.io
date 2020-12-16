@@ -19,7 +19,8 @@
 
 /* Paragrapgh for Parallax Section */
 .paral p {
-  font-size: 24px;
+  font-size: 32px;
+  font-weight: 390;
   color: white;
   text-align: center;
   line-height: 60px;
@@ -36,7 +37,6 @@
 
 @media only screen and (min-device-width: 340px) and (min-device-height: 580px) {
   .paral p {
-    font-size: 20px;
     margin-bottom: 0;
   }
   .paral h1 {
