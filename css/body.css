@@ -70,3 +70,28 @@
 .btn {
   margin: 0.5rem;
 }
+
+.panel-group {
+  margin-top: 1rem;
+  border-style: solid;
+  border-color: #ffcd37ff;
+  border-radius: 10%;
+  padding: 1rem;
+}
+
+.panel-title {
+  color: black;
+}
+
+.panel-title a:hover {
+  color: rgb(110, 110, 110);
+  text-decoration: none;
+}
+
+.panel-title a {
+  color: black;
+}
+
+.panel-body {
+  margin-bottom: 1rem;
+}

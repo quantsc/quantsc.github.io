@@ -9,15 +9,16 @@
     <title>Quantitative Analysis at USC</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <link href="css/body.css" rel="stylesheet" />
     <link href="css/parallax.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <script src="js/modernizr.js"></script>
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/main.js"></script>
   </head>
   <body>
     <header>
@@ -193,27 +194,90 @@
                 <h2 class="featurette-heading">
                   Programs for our first semester, S'21:
                 </h2>
-                <ul>
-                  <li>A quant-based lecture series</li>
-                  <li>Guided algorithm-development projects</li>
-                  <li>Recruitment preparation events</li>
-                  <li>Poker Nights</li>
-                </ul>
+                <div class="container">
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapse1"
+                            >A quant-based lecture series</a
+                          >
+                        </h4>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          Come to our weekly meetings to learn about topics
+                          ranging from market-making to sports betting.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapse2"
+                            >Guided algorithm-development</a
+                          >
+                        </h4>
+                      </div>
+                      <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          Learn how to create, test, and deploy your very own
+                          trading algorithm alongside fellow USC students
+                          through our semester-long team projects.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapse3"
+                            >Recruitment preparation</a
+                          >
+                        </h4>
+                      </div>
+                      <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>
+                            A starting point if you're uncertain about where to
+                            start in the recruitment process or just tired of
+                            studying on your own
+                          </p>
+                          <p>Also, resume reviews and industry talks</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapse4"
+                            >Game Nights</a
+                          >
+                        </h4>
+                      </div>
+                      <div id="collapse4" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          Come to our game nights to learn about poker,
+                          blackjack, Fermi questions, and more!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-md-5 order-md-1">
-                <svg
-                  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                  width="500"
-                  height="500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: 500x500"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <rect width="100%" height="100%" />
-                  <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-                </svg>
+                <img src="assets/imgs/doheny.jpg" class="img-fluid mx-auto" />
               </div>
             </div>
 
@@ -242,19 +306,7 @@
                 >
               </div>
               <div class="col-md-5">
-                <svg
-                  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                  width="500"
-                  height="500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: 500x500"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <rect width="100%" height="100%" fill="#eee" />
-                  <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-                </svg>
+                <img src="assets/imgs/skyline.jpg" class="img-fluid mx-auto" />
               </div>
             </div>
             <hr class="featurette-divider" />
@@ -285,6 +337,20 @@
       </main>
     </div>
 
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
