@@ -12,6 +12,7 @@ html {
 
 main {
   grid-area: rest;
+  grid-column-start: 1;
   margin-top: 5%;
 }
 
