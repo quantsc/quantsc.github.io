@@ -36,6 +36,17 @@
   margin-left: 0.75rem;
 }
 
+.prof-photo {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 .profile {
   display: block;
   color: rgb(79, 79, 79);
@@ -91,6 +102,7 @@
 /* ACCORDION PANEL */
 .panel-group {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   border-style: solid;
   border-color: #ffcd37ff;
   border-radius: 2rem;
