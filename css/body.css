@@ -36,6 +36,12 @@
   margin-left: 0.75rem;
 }
 
+@media (max-width: 1000px) and (min-width: 550px) {
+  .team .col-lg-3 {
+    width: 50%;
+  }
+}
+
 .prof-photo {
   display: inline-block;
   width: 150px;
@@ -50,7 +56,7 @@
 .profile {
   display: block;
   color: rgb(79, 79, 79);
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 400;
   margin-top: 0.5rem;
   text-decoration: none;
