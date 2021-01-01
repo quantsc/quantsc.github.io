@@ -97,7 +97,17 @@
 
 /* BUTTONS */
 .btn {
+  border: none;
   margin: 0.5rem;
+}
+
+.btn-primary,
+.btn-primary:visited {
+  background-color: rgb(255, 191, 0);
+}
+
+.btn-primary:hover {
+  background-color: rgb(255, 207, 62);
 }
 
 /* ACCORDION PANEL */
@@ -128,4 +138,8 @@
 
 .panel-body {
   margin-bottom: 1rem;
+}
+
+.team h2 {
+  margin-top: 0;
 }
