@@ -44,8 +44,9 @@
   }
 }
 
-@media only screen and (min-device-width: 340px) and (min-device-height: 580px) and (max-device-width: 1000) {
+@media only screen and (min-device-width: 380px) and (min-device-height: 580px) {
   .paral p {
+    font-size: 26px;
     margin-bottom: 0;
   }
   .paral h1 {
@@ -53,7 +54,7 @@
   }
 }
 
-@media only screen and (max-device-width: 339px) {
+@media only screen and (max-device-width: 380px) {
   .paral p {
     font-size: 16px;
     margin-bottom: 0;
@@ -69,6 +70,7 @@
   height: 100%;
   grid-area: welcome;
   padding-bottom: 35%;
+  opacity: 0.9;
 }
 
 /* Remove Bottom Margin from Jumbotron */
