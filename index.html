@@ -2,6 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-116688365-2");
+    </script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -18,6 +29,17 @@
     <link href="css/body.css" rel="stylesheet" />
     <link href="css/parallax.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      var show = function (a) {
+        $("#tabs-".concat(a))
+          .addClass("active")
+          .siblings()
+          .removeClass("active");
+        $("#li-".concat(a)).addClass("active").siblings().removeClass("active");
+      };
+    </script>
   </head>
   <body>
     <header>
@@ -79,80 +101,129 @@
       </div>
 
       <main class="container">
-        <div class="bg-light p-5 rounded" id="about-us">
-          <h1>Mission</h1>
-          <p class="lead">
-            We foster an environment of knowledge and expertise through
-            projects, guest talks, social activities, and more. Quant SC serves
-            as an introduction to the dynamic field of algorithmic trading,
-            bringing together a community of passionate and aspiring quants at
-            USC.
-          </p>
-        </div>
+        <hr class="featurette-divider" id="above-about-us" />
+
+        <section class="section page-section" id="about-us">
+          <div class="main-content-wrapper">
+            <div class="container">
+              <div class="main-content">
+                <h1 style="text-align: center; padding-bottom: 1rem">
+                  Who We Are
+                </h1>
+              </div>
+            </div>
+            <div class="container">
+              <div class="section-tabs">
+                <nav class="tabs-nav">
+                  <ul>
+                    <li id="li-about" class="active">
+                      <a onclick="show('about');"> About Us </a>
+                    </li>
+                    <li id="li-our-team">
+                      <a onclick="show('our-team');"> Our Team </a>
+                    </li>
+                    <span class="indicator"> </span>
+                  </ul>
+                </nav>
+                <div class="tabs-content">
+                  <div id="tabs-about" class="tab-pane active">
+                    <div class="main-content">
+                      <h2>
+                        <br />
+                      </h2>
+                      <h2>
+                        Our Mission
+                        <br />
+                      </h2>
+                      <p>
+                        We foster an environment of knowledge and expertise
+                        through projects, guest talks, social activities, and
+                        more. Quant SC serves as an introduction to the dynamic
+                        field of algorithmic trading, bringing together a
+                        community of passionate and aspiring quants at USC.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="tabs-our-team" class="tab-pane">
+                    <div class="main-content"></div>
+                    <section class="members-list team">
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <div
+                            class="prof-photo"
+                            style="
+                              background-image: url('assets/imgs/rohan.jpeg');
+                            "
+                          ></div>
+                          <a
+                            class="profile"
+                            href="https://www.linkedin.com/in/rohansanjay/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Rohan Sanjay</a
+                          >
+                          <h5>President</h5>
+                        </div>
+                        <div class="col-lg-3">
+                          <div
+                            class="prof-photo"
+                            style="
+                              background-image: url('assets/imgs/steve.jpeg');
+                            "
+                          ></div>
+                          <a
+                            class="profile"
+                            href="https://www.linkedin.com/in/steve-nguyen-2b4781160"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Steve Nguyen</a
+                          >
+                          <h5>VP of Community</h5>
+                        </div>
+                        <div class="col-lg-3">
+                          <div
+                            class="prof-photo"
+                            style="
+                              background-image: url('assets/imgs/adam.jpeg');
+                            "
+                          ></div>
+                          <a
+                            class="profile"
+                            href="https://www.linkedin.com/in/adamvonarnim"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Adam von Arnim</a
+                          >
+                          <h5>VP of Projects</h5>
+                        </div>
+                        <div class="col-lg-3">
+                          <div
+                            class="prof-photo"
+                            style="
+                              background-image: url('assets/imgs/kai.jpeg');
+                            "
+                          ></div>
+                          <a
+                            class="profile"
+                            href="https://www.linkedin.com/in/kaihmedina/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Kai Medina</a
+                          >
+                          <h5>VP of Finance</h5>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- team, events, and apps ================================================== -->
         <div class="container">
           <div class="container team">
-            <div class="row">
-              <div class="col-lg-3">
-                <div
-                  class="prof-photo"
-                  style="background-image: url('assets/imgs/rohan.jpeg')"
-                ></div>
-                <a
-                  class="profile"
-                  href="https://www.linkedin.com/in/rohansanjay/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Rohan Sanjay</a
-                >
-                <h5>President</h5>
-              </div>
-              <div class="col-lg-3">
-                <div
-                  class="prof-photo"
-                  style="background-image: url('assets/imgs/steve.jpeg')"
-                ></div>
-                <a
-                  class="profile"
-                  href="https://www.linkedin.com/in/steve-nguyen-2b4781160"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Steve Nguyen</a
-                >
-                <h5>VP of Community</h5>
-              </div>
-              <div class="col-lg-3">
-                <div
-                  class="prof-photo"
-                  style="background-image: url('assets/imgs/adam.jpeg')"
-                ></div>
-                <a
-                  class="profile"
-                  href="https://www.linkedin.com/in/adamvonarnim"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Adam von Arnim</a
-                >
-                <h5>VP of Projects</h5>
-              </div>
-              <div class="col-lg-3">
-                <div
-                  class="prof-photo"
-                  style="background-image: url('assets/imgs/kai.jpeg')"
-                ></div>
-                <a
-                  class="profile"
-                  href="https://www.linkedin.com/in/kaihmedina/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Kai Medina</a
-                >
-                <h5>VP of Finance</h5>
-              </div>
-            </div>
-            <!-- /.row -->
-
             <!-- START THE FEATURETTES -->
 
             <hr class="featurette-divider" id="above-events" />
@@ -160,66 +231,25 @@
             <div class="row featurette" id="events">
               <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">What We Do</h2>
-                <div class="panel-group" id="accordion">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a
-                          data-toggle="collapse"
-                          data-parent="#accordion"
-                          href="#collapse1"
-                          >Guided algorithm-development</a
-                        >
-                      </h4>
-                    </div>
-                    <div id="collapse1" class="panel-collapse collapse in show">
-                      <div class="panel-body">
-                        Learn how to create, test, and deploy your very own
-                        trading algorithm alongside fellow USC students through
-                        our semester-long team projects.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a
-                          data-toggle="collapse"
-                          data-parent="#accordion"
-                          href="#collapse2"
-                          >Recruitment preparation</a
-                        >
-                      </h4>
-                    </div>
-                    <div id="collapse2" class="panel-collapse collapse show">
-                      <div class="panel-body">
-                        <p>
-                          A starting point if you're uncertain about where to
-                          start in the recruitment process or just tired of
-                          studying on your own
-                        </p>
-                        <p>Also, resume reviews and industry talks</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a
-                          data-toggle="collapse"
-                          data-parent="#accordion"
-                          href="#collapse3"
-                          >Game nights</a
-                        >
-                      </h4>
-                    </div>
-                    <div id="collapse3" class="panel-collapse collapse in show">
-                      <div class="panel-body">
-                        Come to our game nights for community building through
-                        poker, blackjack, Fermi questions, and more!
-                      </div>
-                    </div>
-                  </div>
+                <div class="panel-group">
+                  <h4 class="panel-title">Guided algorithm-development</h4>
+                  <p>
+                    Learn how to create, test, and deploy your very own trading
+                    algorithm alongside fellow USC students through our
+                    semester-long team projects.
+                  </p>
+                  <h4 class="panel-title">Recruitment preparation</h4>
+                  <p>
+                    A starting point if you're uncertain about where to start in
+                    the recruitment process or just tired of studying on your
+                    own
+                  </p>
+                  <p>Also, resume reviews and industry talks</p>
+                  <h4 class="panel-title">Game nights</h4>
+                  <p>
+                    Come to our game nights for community building through
+                    poker, blackjack, Fermi questions, and more!
+                  </p>
                 </div>
               </div>
               <div class="col-md-5 order-md-1">
@@ -263,8 +293,34 @@
                 />
               </div>
             </div>
-            <hr class="featurette-divider" />
 
+            <hr class="featurette-divider" id="above-faq" />
+
+            <div class="faq">
+              <h3>FAQ</h3>
+              <p class="q">Does Quant SC accept members on a rolling basis?</p>
+              <p class="a">
+                Due to the structure of our organization's projects, we are
+                unable to accept members outside of the Fall application cycle.
+              </p>
+              <p class="q">Does Quant SC accept members on a rolling basis?</p>
+              <p class="a">
+                Due to the structure of our organization's projects, we are
+                unable to accept members outside of the Fall application cycle.
+              </p>
+              <p class="q">Does Quant SC accept members on a rolling basis?</p>
+              <p class="a">
+                Due to the structure of our organization's projects, we are
+                unable to accept members outside of the Fall application cycle.
+              </p>
+              <p class="q">Does Quant SC accept members on a rolling basis?</p>
+              <p class="a">
+                Due to the structure of our organization's projects, we are
+                unable to accept members outside of the Fall application cycle.
+              </p>
+            </div>
+
+            <hr class="featurette-divider" />
             <!-- /END THE FEATURETTES -->
           </div>
           <!-- /.container -->
@@ -306,5 +362,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/main-2.0.0.js"></script>
   </body>
 </html>
