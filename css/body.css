@@ -44,25 +44,6 @@
   transform: none;
 }
 
-.tabs-nav ul li a::after {
-  background: #c60000ff;
-}
-
-#sub-navigation ul li a:hover::after,
-.tabs-nav ul li a:hover::after {
-  background: #ffc880;
-}
-
-#sub-navigation ul li.active a,
-.tabs-nav ul li.active a,
-.tabs-nav ul li a:hover {
-  color: #ffffff !important;
-  background: #c60000ff !important;
-}
-
-.tabs-nav ul li a:hover {
-  color: #888;
-}
 .tabs-nav ul {
   position: relative;
   margin: 0 auto;
@@ -98,8 +79,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: #181818;
 }
 .tabs-nav ul li a::after {
+  background: #c60000ff;
   content: "";
   display: block;
   position: absolute;
@@ -111,39 +94,14 @@
   transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
   transition: all 0.2s cubic-bezier(0.7, 0, 0.3, 1);
 }
-.tabs-nav ul li.active a::after {
-  -ms-transform: none;
-  transform: none;
-}
-.tabs-nav ul span.indicator {
-  display: none;
-}
-
-.tabs-nav ul li a {
-  color: #181818;
-}
-.tabs-nav ul li a:hover {
-  color: #c60000ff;
-}
+.tabs-nav ul li.active a,
+.tabs-nav ul li.active a::after,
+.tabs-nav ul li a:hover,
 .tabs-nav ul li a:hover::after {
-  background: #c60000ff;
-}
-.tabs-nav ul li.active a::after {
-  background: #c60000ff;
-}
-.tabs-nav ul span.indicator {
-  display: none;
-  background: #c60000ff;
-}
-.tabs-nav ul li a::after {
-  background: #c60000ff;
-}
-.tabs-nav ul li a:hover::after {
-  background: #ffc880;
-}
-.tabs-nav ul li.active a {
   color: #ffffff !important;
   background: #c60000ff !important;
+  -ms-transform: none;
+  transform: none;
 }
 
 .main-content-wrapper {
@@ -297,14 +255,17 @@
   background-color: rgb(255, 207, 62);
 }
 
-/* EVENTS PANEL */
+/* EVENTS PANEL
+------------------------------------------ */
 .panel-group {
-  margin-top: 1rem;
   margin-bottom: 1rem;
-  border-style: solid;
-  border-color: #ffcd37ff;
   padding: 1rem;
   width: 90%;
+}
+
+#what-we-do {
+  border: solid;
+  border-color: rgb(255, 207, 62);
 }
 
 .panel-title {
@@ -315,23 +276,141 @@
   margin-bottom: 1rem;
 }
 
+.panel-title a:hover {
+  color: rgb(140, 1, 1);
+  text-decoration: underline;
+}
+.panel-title a {
+  color: #c60000ff;
+  font-size: 20px;
+  text-decoration: none;
+}
+.panel-body {
+  margin-bottom: 1rem;
+}
+.panel-body p {
+  text-align: left;
+  margin-left: 5%;
+}
+
+/* TAB PANEL
+------------------------------------------ */
+@media (min-width: 820px) {
+  #project-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.project-sidebar {
+  height: 100%;
+  padding: 0;
+}
+
+.project-block .bar-item {
+  width: 100%;
+  display: block;
+  white-space: normal;
+  outline: 0;
+}
+
+.bar-item {
+  padding: 0px;
+  display: block;
+  outline: 0;
+  border: none;
+}
+
+.bar-btn {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.bar-container:after,
+.bar-container:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.animate-up {
+  position: relative;
+  animation: animateUp 0.4s;
+}
+@keyframes animateUp {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.project-info {
+  text-align: left;
+}
+
+.project-info div {
+  display: none;
+}
+
+.tablink {
+  margin: 0.3rem;
+  display: block;
+  position: relative;
+  padding: 0.5em 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #181818;
+  background: rgb(237, 237, 237);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.tablink.active::after {
+  background: #c60000ff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
+  transition: all 0.2s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.tablink.active,
+.tablink:hover,
+.tablink:hover::after {
+  color: #ffffff !important;
+  background: #c60000ff !important;
+  -ms-transform: none;
+  transform: none;
+}
+
 /* FAQ
 ------------------------------------------ */
 .faq {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
-.faq h3 {
+.faq h2 {
   text-align: center;
   margin-bottom: 2.5rem;
   color: #c60000ff;
-}
-.faq .q {
-  text-align: left;
-  color: #c60000ff;
-}
-
-.faq .a {
-  text-align: left;
-  margin-left: 5%;
 }

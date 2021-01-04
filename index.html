@@ -2,15 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "UA-116688365-2");
-    </script>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,15 +23,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      var show = function (a) {
-        $("#tabs-".concat(a))
-          .addClass("active")
-          .siblings()
-          .removeClass("active");
-        $("#li-".concat(a)).addClass("active").siblings().removeClass("active");
-      };
-    </script>
+    <script src="js/replace.js"></script>
   </head>
   <body>
     <header>
@@ -65,7 +49,7 @@
                 <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about-us">About Us</a>
+                <a class="nav-link" href="#above-about-us">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#above-events">Events</a>
@@ -107,7 +91,13 @@
           <div class="main-content-wrapper">
             <div class="container">
               <div class="main-content">
-                <h1 style="text-align: center; padding-bottom: 1rem">
+                <h1
+                  style="
+                    text-align: center;
+                    padding-bottom: 1rem;
+                    margin-top: 1rem;
+                  "
+                >
                   Who We Are
                 </h1>
               </div>
@@ -122,7 +112,6 @@
                     <li id="li-our-team">
                       <a onclick="show('our-team');"> Our Team </a>
                     </li>
-                    <span class="indicator"> </span>
                   </ul>
                 </nav>
                 <div class="tabs-content">
@@ -130,17 +119,20 @@
                     <div class="main-content">
                       <h2>
                         <br />
-                      </h2>
-                      <h2>
                         Our Mission
                         <br />
                       </h2>
                       <p>
-                        We foster an environment of knowledge and expertise
-                        through projects, guest talks, social activities, and
-                        more. Quant SC serves as an introduction to the dynamic
-                        field of algorithmic trading, bringing together a
-                        community of passionate and aspiring quants at USC.
+                        Founded in response to the lack of quantiative-focused
+                        student organizations at USC, Quant SC serves as an
+                        introduction to the dynamic field of algorithmic
+                        trading.<br /><br />We foster an environment of
+                        knowledge and expertise through our algorithmic trading
+                        strategy incubator, where project teams collaborate on
+                        developing a trading strategy. And through guest talks,
+                        social activities, recruitment preparation, and more,
+                        Quant SC works to develop a true community of passionate
+                        and aspiring quants at USC.
                       </p>
                     </div>
                   </div>
@@ -231,21 +223,29 @@
             <div class="row featurette" id="events">
               <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">What We Do</h2>
-                <div class="panel-group">
+                <div class="panel-group" id="what-we-do">
                   <h4 class="panel-title">Guided algorithm-development</h4>
                   <p>
-                    Learn how to create, test, and deploy your very own trading
-                    algorithm alongside fellow USC students through our
-                    semester-long team projects.
+                    The core of Quant SC is our algorithm incubator. New members
+                    join every semester to learn how to create, test, and deploy
+                    their very own trading algorithm while collaborating with
+                    fellow USC students.
                   </p>
                   <h4 class="panel-title">Recruitment preparation</h4>
                   <p>
-                    A starting point if you're uncertain about where to start in
-                    the recruitment process or just tired of studying on your
-                    own
+                    Recruitment preparation events function as a starting point
+                    for anyone uncertain about how to enter the field. By
+                    demystifying the recruitment process, Quant SC hopes to make
+                    it a more inclusive, equitable process that develops the
+                    best talent.
                   </p>
-                  <p>Also, resume reviews and industry talks</p>
-                  <h4 class="panel-title">Game nights</h4>
+                  <h4 class="panel-title">Guest Speakers</h4>
+                  <p>
+                    Quant SC hosts industry speakers from professional firms to
+                    give members a glimpse of what professional life as a quant
+                    might look like.
+                  </p>
+                  <h4 class="panel-title">Community Activities</h4>
                   <p>
                     Come to our game nights for community building through
                     poker, blackjack, Fermi questions, and more!
@@ -258,6 +258,106 @@
                   class="img-fluid mx-auto"
                   alt="doheny"
                 />
+              </div>
+            </div>
+
+            <hr class="featurette-divider" id="above-project-timeline" />
+
+            <div class="row featurette" id="projects">
+              <h2 class="featurette-heading">
+                Guided Algorithm Development Timeline
+              </h2>
+              <div class="col-md-3">
+                <div class="project-sidebar project-block">
+                  <button
+                    class="bar-item bar-btn tablink active"
+                    onclick="openLink(event, 'StratRes')"
+                  >
+                    Strategy Research
+                  </button>
+                  <button
+                    class="bar-item bar-btn tablink"
+                    onclick="openLink(event, 'Implementation')"
+                  >
+                    Implementation
+                  </button>
+                  <button
+                    class="bar-item bar-btn tablink"
+                    onclick="openLink(event, 'Workshops')"
+                  >
+                    Workshops
+                  </button>
+                  <button
+                    class="bar-item bar-btn tablink"
+                    onclick="openLink(event, 'Enhance')"
+                  >
+                    Enhancement
+                  </button>
+                  <button
+                    class="bar-item bar-btn tablink"
+                    onclick="openLink(event, 'Evaluate')"
+                  >
+                    Evaluation
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-md-9">
+                <div class="project-info">
+                  <div
+                    id="StratRes"
+                    class="bar-container project animate-up active"
+                    style="display: block"
+                  >
+                    <h2>Strategy Research</h2>
+                    <p>
+                      Our members are taught all pertinent fundamental financial
+                      information necessary to analyze a potentially successful
+                      strategy. Teams research algorithms and discuss papers.
+                    </p>
+                  </div>
+
+                  <div
+                    id="Implementation"
+                    class="bar-container project animate-up"
+                  >
+                    <h2>Implementation</h2>
+                    <p>
+                      With a given strategy picked out, teams will be given
+                      necessary guidance in how to select a development
+                      platform, read documentation, and develop implementations
+                      of custom trading algorithms.
+                    </p>
+                  </div>
+                  <div id="Workshops" class="bar-container project animate-up">
+                    <h2>Workshops</h2>
+                    <p>
+                      Workshops will be conducted for GitHub, QuantConnect, and
+                      ML to give students a practical introduction to
+                      programming.
+                    </p>
+                  </div>
+                  <div id="Enhance" class="bar-container project animate-up">
+                    <h2>Enhancement</h2>
+                    <p>
+                      All algorithms will incorporate detailed components that
+                      allow students to conduct original research and then
+                      determine the efficacy of algorithm component.
+                    </p>
+                  </div>
+                  <div id="Evaluate" class="bar-container project animate-up">
+                    <h2>Evaluation</h2>
+                    <p>
+                      On an intra-organization team scope, project teams will be
+                      instructed in how to compare their algorithm's performance
+                      against others' and how to determine the best market niche
+                      their algorithm can embody. By learning to evaluate how
+                      their algorithm ties into the market, students will be
+                      able to further enhance their projects to meet their
+                      specific niche's characteristics.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -297,27 +397,133 @@
             <hr class="featurette-divider" id="above-faq" />
 
             <div class="faq">
-              <h3>FAQ</h3>
-              <p class="q">Does Quant SC accept members on a rolling basis?</p>
-              <p class="a">
-                Due to the structure of our organization's projects, we are
-                unable to accept members outside of the Fall application cycle.
-              </p>
-              <p class="q">Does Quant SC accept members on a rolling basis?</p>
-              <p class="a">
-                Due to the structure of our organization's projects, we are
-                unable to accept members outside of the Fall application cycle.
-              </p>
-              <p class="q">Does Quant SC accept members on a rolling basis?</p>
-              <p class="a">
-                Due to the structure of our organization's projects, we are
-                unable to accept members outside of the Fall application cycle.
-              </p>
-              <p class="q">Does Quant SC accept members on a rolling basis?</p>
-              <p class="a">
-                Due to the structure of our organization's projects, we are
-                unable to accept members outside of the Fall application cycle.
-              </p>
+              <h2>FAQs</h2>
+              <div class="panel-group" id="accordion">
+                <div class="panel">
+                  <div class="panel-heading">
+                    <p class="panel-title">
+                      <a
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse1"
+                      >
+                        Does Quant SC accept members on a rolling basis?
+                      </a>
+                    </p>
+                  </div>
+                  <div id="collapse1" class="collapse show">
+                    <div class="panel-body">
+                      <p>
+                        Due to the structure of our project teams, we are unable
+                        to accept members outside of the application cycle.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel">
+                  <div class="panel-heading">
+                    <p class="panel-title">
+                      <a
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse2"
+                      >
+                        What kind of time commitment should I expect as a
+                        project team member?
+                      </a>
+                    </p>
+                  </div>
+                  <div id="collapse2" class="collapse">
+                    <div class="panel-body">
+                      <p>
+                        On top of attending meetings and speaker events, we want
+                        as much commitment as you can handle to produce the
+                        coolest, best quality algos possible! It sounds cliche,
+                        but the more you put in, the more you get out.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel">
+                  <div class="panel-heading">
+                    <p class="panel-title">
+                      <a
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse3"
+                      >
+                        Can we continue developing our project after the
+                        semester ends?
+                      </a>
+                    </p>
+                  </div>
+                  <div id="collapse3" class="collapse">
+                    <div class="panel-body">
+                      <p>
+                        Absolutely! Quant SC is all about you getting you to
+                        create and iterate. We encourage you to constantly
+                        improve your projects, as well as your relationships
+                        with fellow quants no matter the time of year.
+                      </p>
+                      <p>
+                        In fact, once part of Quant SC community, members will
+                        always be welcome to attend future meetings or events.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel">
+                  <div class="panel-heading">
+                    <p class="panel-title">
+                      <a
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse4"
+                      >
+                        I have an existing algo/idea I’ve worked on in the past,
+                        can I continue to build it in with my project team?
+                      </a>
+                    </p>
+                  </div>
+                  <div id="collapse4" class="collapse">
+                    <div class="panel-body">
+                      <p>
+                        Of course! We're happy to help you continue developing
+                        whatever you're passionate about. Our resources are at
+                        your disposal.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel">
+                  <div class="panel-heading">
+                    <p class="panel-title">
+                      <a
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse5"
+                      >
+                        My friend and I both got accepted! Can we pleeease be on
+                        the same project team?
+                      </a>
+                    </p>
+                  </div>
+                  <div id="collapse5" class="collapse">
+                    <div class="panel-body">
+                      <p>
+                        We really are sorry but because of the specific needs of
+                        each project team, we cannot make any promises. However,
+                        we will consider any requests to be matched with friends
+                        or past collaborators.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <hr class="featurette-divider" />
@@ -362,6 +568,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/main-2.0.0.js"></script>
+    <script src="js/main-2.0.0.js"></script>
   </body>
 </html>
