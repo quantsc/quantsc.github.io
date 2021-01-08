@@ -370,7 +370,6 @@
 }
 
 .tablink {
-  margin: 0.3rem;
   display: block;
   position: relative;
   padding: 0.5em 1em;
@@ -378,8 +377,10 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #181818;
-  background: rgb(237, 237, 237);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  background: white;
+  border-style: none none solid none;
+  border-width: 3px;
+  border-color: #c60000ff;
 }
 .tablink.active::after {
   background: #c60000ff;
