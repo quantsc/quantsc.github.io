@@ -379,7 +379,7 @@
   color: #181818;
   background: white;
   border-style: none none solid none;
-  border-width: 3px;
+  border-width: medium;
   border-color: #c60000ff;
 }
 .tablink.active::after {
