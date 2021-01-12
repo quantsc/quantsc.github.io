@@ -110,3 +110,7 @@ main {
 .subtle-link {
   text-decoration: none;
 }
+
+.subtle-link:hover {
+  color: rgb(154, 1, 1);
+}
