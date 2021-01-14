@@ -272,6 +272,11 @@
   color: black;
 }
 
+.panel-heading .panel-title {
+  color: #c60000ff !important;
+  font-size: 20px !important;
+}
+
 .panel-body {
   margin-bottom: 1rem;
 }
@@ -346,17 +351,17 @@
   clear: both;
 }
 
-.animate-up {
+.animate-right {
   position: relative;
-  animation: animateUp 0.4s;
+  animation: animateRight 0.4s;
 }
-@keyframes animateUp {
+@keyframes animateRight {
   from {
-    bottom: -50px;
+    left: 100px;
     opacity: 0;
   }
   to {
-    bottom: 0;
+    left: 0;
     opacity: 1;
   }
 }
