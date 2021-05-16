@@ -82,7 +82,7 @@
   color: #181818;
 }
 .tabs-nav ul li a::after {
-  background: #c60000ff;
+  background: #741bc1;
   content: "";
   display: block;
   position: absolute;
@@ -99,7 +99,7 @@
 .tabs-nav ul li a:hover,
 .tabs-nav ul li a:hover::after {
   color: #ffffff !important;
-  background: #c60000ff !important;
+  background: #741bc1 !important;
   -ms-transform: none;
   transform: none;
 }
@@ -122,7 +122,7 @@
 }
 
 .main-content ul li::before {
-  color: #c60000ff;
+  color: #741bc1;
   content: "\2022";
   font-size: 18px;
   position: absolute;
@@ -139,7 +139,7 @@
   background: rgba(24, 24, 24, 0.5);
 }
 .main-content a:hover::after {
-  background: #c60000ff;
+  background: #741bc1;
 }
 
 .main-content ul li {
@@ -149,7 +149,7 @@
   line-height: 1.7;
 }
 .main-content ul li::before {
-  color: #c60000ff;
+  color: #741bc1;
   content: "\2022";
   font-size: 18px;
   position: absolute;
@@ -248,11 +248,11 @@
 
 .btn-primary,
 .btn-primary:visited {
-  background-color: rgb(255, 191, 0);
+  background-color: #741bc1;
 }
 
 .btn-primary:hover {
-  background-color: rgb(255, 207, 62);
+  background-color: #741bc1;
 }
 
 /* EVENTS PANEL
@@ -265,7 +265,7 @@
 
 #what-we-do {
   border: solid;
-  border-color: rgb(255, 207, 62);
+  border-color: #741bc1;
 }
 
 .panel-title {
@@ -273,7 +273,7 @@
 }
 
 .panel-heading .panel-title {
-  color: #c60000ff !important;
+  color: #741bc1 !important;
   font-size: 20px !important;
 }
 
@@ -282,11 +282,11 @@
 }
 
 .panel-title a:hover {
-  color: rgb(140, 1, 1);
+  color: #021574;
   text-decoration: underline;
 }
 .panel-title a {
-  color: #c60000ff;
+  color: #741bc1;
   font-size: 20px;
   text-decoration: none;
 }
@@ -385,10 +385,10 @@
   background: white;
   border-style: none none solid none;
   border-width: medium;
-  border-color: #c60000ff;
+  border-color: #741bc1;
 }
 .tablink.active::after {
-  background: #c60000ff;
+  background: #741bc1;
   content: "";
   display: block;
   position: absolute;
@@ -404,7 +404,7 @@
 .tablink:hover,
 .tablink:hover::after {
   color: #ffffff !important;
-  background: #c60000ff !important;
+  background: #741bc1 !important;
   -ms-transform: none;
   transform: none;
 }
@@ -418,5 +418,5 @@
 .faq h2 {
   text-align: center;
   margin-bottom: 2.5rem;
-  color: #c60000ff;
+  color: #322b8e;
 }

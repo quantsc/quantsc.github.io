@@ -82,23 +82,23 @@ main {
 }
 
 .navbar-dark {
-  color: #c60000ff;
+  color: #322b8e;
 }
 
 .cardinal-back {
-  background-color: #c60000ff;
+  background-color: #322b8e;
 }
 
 .gold-back {
-  background-color: #ffcd37ff;
+  background-color: #741bc1;
 }
 
 .cardinal-text {
-  color: #c60000ff;
+  color: #322b8e;
 }
 
 .gold-text {
-  color: #ffcd37ff !important;
+  color: #741bc1 !important;
 }
 
 /* FOOTER */
