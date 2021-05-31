@@ -86,7 +86,10 @@ main {
 }
 
 .cardinal-back {
-  background-color: #322b8e;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background: transparent;
+  transition: background 0.5s ease 0s;
+  /* background-color: #322b8e; */
 }
 
 .gold-back {
