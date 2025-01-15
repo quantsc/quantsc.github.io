@@ -1,4 +1,4 @@
-# QuantSCWebsite
+# Quant SC Website
 
 Hello and welcome to the Quant SC Website repo.
 
