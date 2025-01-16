@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
-
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-    content="USC's premier student organization for anyone interested in the field of quantitative finance" />
-
+  <meta
+    name="description"
+    content="USC's premier student organization for anyone interested in quantitative finance"
+  />
   <meta name="generator" content="Hugo 0.79.0" />
   <title>Quant SC</title>
   <link rel="icon" href="assets/imgs/ringsonly_color.png" />
 
   <!-- Bootstrap core CSS -->
   <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-
   <link href="css/body.css" rel="stylesheet" />
   <link href="css/parallax.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Source+Sans+Pro:wght@300;400&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/replace.js"></script>
@@ -33,26 +35,36 @@
         <div id="logo">
           <img alt="Quant SC" src="assets/imgs/ringsonly_white.png" />
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <li class="nav-item active">
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#above-about-us">About Us</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#above-events">Events</a>
+              <a class="nav-link" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#above-application">Apply</a>
+              <a class="nav-link" href="#alumni">Alumni</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#above-alumni">Alumni</a>
+              <a class="nav-link" href="#apply">Apply</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
             </li>
           </ul>
         </div>
@@ -61,202 +73,238 @@
   </header>
 
   <div class="body-container">
-    <div class="jumbotron paral" id="welcome-message">
-      <div class="smaller-width">
-        <h1 class="display-3">Welcome to Quant SC</h1>
-        <p>
-          USC's primary community for students interested in quantitative
-          finance and analysis.
+    <div class="hero-section" id="welcome-message">
+      <div class="hero-overlay">
+        <img
+          src="assets/imgs/ringsonly_white.png"
+          alt="Quant SC Logo"
+          class="hero-logo"
+        />
+        <h1 class="hero-title">Quant SC</h1>
+        <p class="hero-subtitle">
+          USC's Premier Student Organization for Anyone Interested in Quantitative Finance
         </p>
-        <p>
-          <a class="btn btn-lg btn-primary" 
-              href="https://forms.gle/hHecirogeudiQeFq7" 
-              role="button">
-              Apply Here &raquo;
-          </a>
-        </p>
-        <!-- <p>  
-        <a class="btn btn-lg btn-primary shadow-none" href="https://airtable.com/shr8EfvDnzylfPFQi"
-                    target="_blank" rel="noopener noreferrer" role="button">Mailing List &raquo;</a>
-        </p> -->
+        <p class="hero-info">Spring 2025 Applications Now Open!</p>
+        <a
+          class="btn btn-lg btn-outline-light"
+          href="https://forms.gle/8u4ytB1AhPin6FWq5"
+          role="button"
+          target="_blank" 
+        >
+          Apply Now &raquo;
+        </a>
       </div>
     </div>
 
     <main class="container">
-      <hr class="featurette-divider" id="above-about-us" />
-
-      <section class="section page-section" id="about-us">
+      <section class="section page-section scroll-offset" id="about">
         <div class="main-content-wrapper">
           <div class="container">
-            <div class="main-content">
-              <h1 style="
-                    text-align: center;
-                    padding-bottom: 1rem;
-                    margin-top: 1rem;
-                  ">
-                Who We Are
-              </h1>
+            <div class="about-content">
+              <h1 class="about-title">About Us</h1>
+              <div class="about-heading-line"></div>
+              <p>
+                Quant SC fosters an inclusive and innovative community where students can explore algorithmic trading and data-driven finance. Through educational workshops, mentorship, and recruiting preparation, we equip our members with the skills and network needed to excel in this dynamic field and launch successful careers. 
+              </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section page-section scroll-offset" id="team">
+        <div class="main-content-wrapper">
           <div class="container">
-            <div class="section-tabs">
-              <nav class="tabs-nav">
-                <ul>
-                  <li id="li-about" class="active">
-                    <a onclick="show('about');"> About Us </a>
-                  </li>
-                  <li id="li-our-team">
-                    <a onclick="show('our-team');"> Our Team </a>
-                  </li>
-                  <li id="li-our-advisors">
-                    <a onclick="show('our-advisors');"> Our Advisors </a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="tabs-content">
-                <div id="tabs-about" class="tab-pane active">
-                  <div class="main-content">
-                    <h2>
-                      <br />
-                      Our Mission
-                      <br />
-                    </h2>
-                    <p>
-                      Quant SC fosters an educational and supportive community
-                      where students explore and prepare for careers in
-                      quantitative finance.<br /><br />
-                      Serving as an introduction to the dynamic field of
-                      algorithmic trading, Quant SC is a pioneer in the
-                      diverse fabric of student organizations at USC.
-                    </p>
+            <div class="team-content">
+              <h1 class="team-title">Team</h1>
+              <div class="team-heading-line"></div>
+              <h2 class="team-subtitle">Executive Board</h2>
+              <div class="team-wrapper">
+                <div class="members">
+                  <div class="member">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/sid-srikanth/"
+                    >
+                      <img
+                        class="profile-photo"
+                        src="assets/imgs/sid_leader.png"
+                        alt="Sid Srikanth"
+                      />
+                      <div class="member-details">
+                        <p class="name">Sid Srikanth</p>
+                        <p class="role">Co-President</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="member">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/shahzeb-lakhani/"
+                    >
+                      <img
+                        class="profile-photo"
+                        src="assets/imgs/shahzeb.png"
+                        alt="Shahzeb Lakhani"
+                      />
+                      <div class="member-details">
+                        <p class="name">Shahzeb Lakhani</p>
+                        <p class="role">Co-President</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="member">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/minseokim04/"
+                    >
+                      <img
+                        class="profile-photo"
+                        src="assets/imgs/min.png"
+                        alt="Min Seo Kim"
+                      />
+                      <div class="member-details">
+                        <p class="name">Min Seo Kim</p>
+                        <p class="role">VP of Curriculum</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="member">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/aishu-sivamurugan/"
+                    >
+                      <img
+                        class="profile-photo"
+                        src="assets/imgs/aishu.png"
+                        alt="Aishu Sivamurugan"
+                      />
+                      <div class="member-details">
+                        <p class="name">Aishu Sivamurugan</p>
+                        <p class="role">VP of Marketing</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="member">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/jalan-zhu-49aa67250/"
+                    >
+                      <img
+                        class="profile-photo"
+                        src="assets/imgs/jalan.jpg"
+                        alt="Jalan Zhu"
+                      />
+                      <div class="member-details">
+                        <p class="name">Jalan Zhu</p>
+                        <p class="role">VP of Projects</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="member">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/michael-blumberg-0ab850261/"
+                    >
+                      <img
+                        class="profile-photo"
+                        src="assets/imgs/michael.jpg"
+                        alt="Michael Blumberg"
+                      />
+                      <div class="member-details">
+                        <p class="name">Michael Blumberg</p>
+                        <p class="role">VP of Finance</p>
+                      </div>
+                    </a>
                   </div>
                 </div>
-                <div id="tabs-our-team" class="tab-pane">
-                  <div class="team">
-                    <h3 style="
-                          text-align: center;
-                          padding-bottom: 1rem;
-                          margin-top: 1rem;
-                        ">
-                      Executive Board
-                    </h3>
-                    <div class="team-wrapper">
-                      <div class="members">
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/danny.jpeg" />
-                          <a target="_blank" href="https://www.linkedin.com/in/danielbohen/">
-                            <p class="name">Daniel Bohen</p>
-                            <p class="role">Senior Advisor</p>
-                          </a>
-                        </div>
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/sid_leader.png" />
-                          <a target="_blank" href="https://www.linkedin.com/in/sid-srikanth/">
-                            <p class="name">Sid Srikanth</p>
-                            <p class="role">Co-President</p>
-                          </a>
-                        </div>
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/shahzeb.png" />
-                          <a target="_blank" href="https://www.linkedin.com/in/shahzeb-lakhani/">
-                            <p class="name">Shahzeb Lakhani</p>
-                            <p class="role">Co-President</p>
-                          </a>
-                        </div>
-                        <!-- <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/logan_norman.jpeg" />
-                          <a target="_blank" href="https://www.linkedin.com/in/logannorman/">
-                            <p class="name">Logan Norman</p>
-                            <p class="role">VP of Projects</p>
-                          </a>
-                        </div> -->
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/libby.jpeg" />
-                          <a target="_blank" href="https://www.linkedin.com/in/elizabethferencik/">
-                            <p class="name">Libby Ferencik</p>
-                            <p class="role">VP of Finances</p>
-                          </a>
-                        </div>
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/sarah.jpg" />
-                          <a target="_blank" href="https://www.linkedin.com/in/sarahnakama/">
-                            <p class="name">Sarah Nakama</p>
-                            <p class="role">VP of External Partnerships</p>
-                          </a>
-                        </div>
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/sid_follower.png" />
-                          <a target="_blank" href="https://www.linkedin.com/in/siddharth-bansal-20/">
-                            <p class="name">Sid Bansal</p>
-                            <p class="role">VP of Projects</p>
-                          </a>
-                        </div>
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/aishu.png" />
-                          <a target="_blank" href="https://www.linkedin.com/in/aishu-sivamurugan/">
-                            <p class="name">Aishu Sivamurugan</p>
-                            <p class="role">VP of Marketing</p>
-                          </a>
-                        </div>
+              </div>
+              <h2 class="team-subtitle">Senior Advisors</h2>
+              <div class="team-wrapper">
+                <div class="members">
+                  <div class="member">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/siddharth-bansal-20/"
+                    >
+                      <img
+                        class="profile-photo"
+                        src="assets/imgs/sid_follower.png"
+                        alt="Sid Bansal"
+                      />
+                      <div class="member-details">
+                        <p class="name">Sid Bansal</p>
+                        <p class="role">Senior Advisor</p>
                       </div>
-                    </div>
-
-                    <br />
-
-                    <h3 style="
-                          text-align: center;
-                          padding-bottom: 1rem;
-                          margin-top: 1rem;
-                        ">
-                      Founding Board
-                    </h3>
-                    <div class="team-wrapper">
-                      <div class="members">
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/rohan.jpeg" />
-                          <a target="_blank" href="https://www.linkedin.com/in/rohansanjay">
-                            <p class="name">Rohan Sanjay</p>
-                            <p class="role">President</p>
-                          </a>
-                        </div>
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/adam.jpg" />
-                          <a target="_blank" href="https://www.linkedin.com/in/adamvonarnim">
-                            <p class="name">Adam von Arnim</p>
-                            <p class="role">VP of Projects</p>
-                          </a>
-                        </div>
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/steve.jpg" />
-                          <a target="_blank" href="https://www.linkedin.com/in/steve-nguyen-2b4781160">
-                            <p class="name">Steve Nguyen</p>
-                            <p class="role">VP of Community</p>
-                          </a>
-                        </div>
+                    </a>
+                  </div>
+                  <div class="member">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/nikhil-deorkar/"
+                    >
+                      <img
+                        class="profile-photo"
+                        src="assets/imgs/nikhil.jpeg"
+                        alt="Nikhil Deorkar"
+                      />
+                      <div class="member-details">
+                        <p class="name">Nikhil Deorkar</p>
+                        <p class="role">Senior Advisor</p>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
-                <div id="tabs-our-advisors" class="tab-pane">
-                  <div class="team">
-                    <div class="team-wrapper">
-                      <div class="members">
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/harris.jpeg" />
-                          <a target="_blank" href="https://www.marshall.usc.edu/personnel/lawrence-harris">
-                            <p class="name">Larry Harris, Ph.D., CFA</p>
-                            <p class="role">Professor of Finance</p>
-                          </a>
-                        </div>
-                        <div class="member" onclick="">
-                          <img class="profile-photo" src="assets/imgs/lv.jpeg" />
-                          <a target="_blank" href="https://www.marshall.usc.edu/personnel/jinchi-lv">
-                            <p class="name">Jinchi Lv, Ph.D.</p>
-                            <p class="role">Professor of Mathematics</p>
-                          </a>
-                        </div>
+              </div>
+              <h2 class="team-subtitle">Founding Members</h2>
+              <div class="team-wrapper">
+                <div class="members members-last">
+                  <div class="member">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/rohansanjay"
+                    >
+                      <img
+                        class="profile-photo"
+                        src="assets/imgs/rohan.jpeg"
+                        alt="Rohan Sanjay"
+                      />
+                      <div class="member-details">
+                        <p class="name">Rohan Sanjay</p>
+                        <p class="role">Co-Founder</p>
                       </div>
-                    </div>
+                    </a>
+                  </div>
+                  <div class="member">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/adamvonarnim"
+                    >
+                      <img
+                        class="profile-photo"
+                        src="assets/imgs/adam.jpg"
+                        alt="Adam von Arnim"
+                      />
+                      <div class="member-details">
+                        <p class="name">Adam von Arnim</p>
+                        <p class="role">Co-Founder</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="member">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/steve-nguyen-2b4781160"
+                    >
+                      <img
+                        class="profile-photo"
+                        src="assets/imgs/steve.jpg"
+                        alt="Steve Nguyen"
+                      />
+                      <div class="member-details">
+                        <p class="name">Steve Nguyen</p>
+                        <p class="role">Co-Founder</p>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -265,297 +313,158 @@
         </div>
       </section>
 
-      <!-- team, events, and apps ================================================== -->
-      <div class="container">
-        <div class="container">
-          <!-- START THE FEATURETTES -->
-
-          <hr class="featurette-divider" id="above-events" />
-
-          <div class="row featurette" id="events">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">What We Do</h2>
-              <div class="panel-group" id="what-we-do">
-                <h4 class="panel-title">Guided Algorithm-Development</h4>
-                <p>
-                  The core of Quant SC is our algorithm incubator. Students
-                  passionate about mathematics, computer science, and finance
-                  collaborate to capitalize on quantitatively-driven financial
-                  opportunities.
-                </p>
-                <h4 class="panel-title">Recruiting</h4>
-                <p>
-                  We set members up for success in the recruiting process with
-                  professional development workshops, exclusive networking
-                  events, firm visits, and mentorship. By demystifying the
-                  recruitment process, Quant SC hopes to make it a more
-                  inclusive, equitable process that develops the best talent.
-                </p>
-                <h4 class="panel-title">Guest Speakers</h4>
-                <p>
-                  Quant SC hosts industry speakers from professional firms to
-                  give members a glimpse of what professional life as a quant
-                  might look like.
-                </p>
-                <h4 class="panel-title">Community</h4>
-                <p>
-                  Throughout the semester, we organize a variety of fun social
-                  events, including game nights and retreats. We will also be
-                  competing in different university-hosted trading
-                  competitions!
-                </p>
-              </div>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <img src="assets/imgs/doheny.jpg" class="img-fluid mx-auto" alt="doheny" />
-            </div>
-          </div>
-
-          <hr class="featurette-divider" id="above-project-timeline" />
-
-          <div class="row featurette" id="projects">
-            <h2 class="featurette-heading">Cohort Timeline</h2>
-            <div class="col-md-3">
-              <div class="project-sidebar project-block">
-                <button class="bar-item bar-btn tablink active" onclick="openLink(event, 'StratRes')">
-                  Strategy Research
-                </button>
-                <button class="bar-item bar-btn tablink" onclick="openLink(event, 'Implementation')">
-                  Implementation
-                </button>
-                <button class="bar-item bar-btn tablink" onclick="openLink(event, 'Workshops')">
-                  Workshops
-                </button>
-                <button class="bar-item bar-btn tablink" onclick="openLink(event, 'Enhance')">
-                  Enhancement
-                </button>
-                <button class="bar-item bar-btn tablink" onclick="openLink(event, 'Evaluate')">
-                  Evaluation
-                </button>
-              </div>
-            </div>
-
-            <div class="col-md-9">
-              <div class="project-info">
-                <div id="StratRes" class="bar-container project animate-right active" style="display: block">
-                  <h2>Strategy Research</h2>
-                  <p>
-                    Each member is taught fundamental financial information
-                    necessary to hypothesize and analyze a potentially
-                    successful strategy. Project teams then research
-                    algorithms and discuss academic papers to decide on one to
-                    implement.
-                  </p>
-                  <p>
-                    Past projects have spanned topics including hidden Markov
-                    models, sentiment analysis, leveraged ETFs, and options
-                    chain analysis.
-                  </p>
-                </div>
-
-                <div id="Implementation" class="bar-container project animate-right">
-                  <h2>Implementation</h2>
-                  <p>
-                    With a specific strategy designed, teams will be given
-                    guidance on how to select a development platform, read
-                    documentation, and implement custom trading algorithms.
-                  </p>
-                </div>
-                <div id="Workshops" class="bar-container project animate-right">
-                  <h2>Workshops</h2>
-                  <p>
-                    Workshops will be given for GitHub, QuantConnect, and
-                    machine learning to give students from non-programming
-                    backgrounds a practical introduction to development.
-                  </p>
-                </div>
-                <div id="Enhance" class="bar-container project animate-right">
-                  <h2>Enhancement</h2>
-                  <p>
-                    Each team's project incorporates unique components that
-                    enhance their algorithms' performance, allowing students
-                    to conduct original research and determine the efficacy of
-                    introduced component.
-                  </p>
-                </div>
-                <div id="Evaluate" class="bar-container project animate-right">
-                  <h2>Evaluation</h2>
-                  <p>
-                    Project teams will be instructed in how to compare their
-                    algorithm's performance against others' and determine
-                    market niches their algorithm can occupy. By learning to
-                    evaluate how their algorithm ties into the market,
-                    students will be able to further enhance their projects to
-                    meet their specific niche's characteristics or expand
-                    their projects to become more broadly used.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <hr class="featurette-divider" id="above-application" />
-
-          <div class="row featurette" id="application">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">Join Us</h2>
-              <p class="lead">
-                </br>
-                <!-- We recruit members every semester and would love to have you
-                join us! Spring 2023 applicaitons are now closed, but we will be recruiting again next fall! In the meantime, feel free to join our mailing list 
-                for updates on info sessions, applications, and more! -->
-                <span>
-                   <a class="btn btn-lg btn-primary" 
-                        href="https://forms.gle/hHecirogeudiQeFq7" 
-                        role="button">
-                    Apply Here
-                    &raquo;</a>
-                </span>
-                </br>
-                <span>
-                  <a class="btn btn-lg btn-primary shadow-none" 
-                    href="https://airtable.com/shr8EfvDnzylfPFQi"
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    role="button">
-                      Mailing List &raquo;
-                  </a>
-                </span>
+      <section class="section page-section scroll-offset" id="alumni">
+        <div class="main-content-wrapper">
+          <div class="container">
+            <div class="alumni-content">
+              <h1 class="alumni-title">Placements</h1>
+              <div class="alumni-heading-line"></div>
+              <p class="text-center mb-4">
+                Our members have gone on to drive innovation at leading finance and technology companies.
               </p>
-            </div>
-            <div class="col-md-5">
-              <img src="assets/imgs/skyline.jpg" class="img-fluid mx-auto" alt="skyline" />
-            </div>
-          </div>
-
-          <hr class="featurette-divider" id="above-alumni" />
-
-          <div class="row featurette" id="alumni">
-            <div class="col-md-12">
-              <h2 class="featurette-heading">Alumni</h2>
-              <p class="lead">
-                Our members have gone on to innovate across financial,
-                technology, and consulting industries.
-              </p>
-              <img src="assets/imgs/Logos Board.png" class="img-fluid mx-auto" alt="alumni placement" />
-            </div>
-          </div>
-
-          <hr class="featurette-divider" id="above-faq" />
-
-          <div class="faq">
-            <h2>FAQs</h2>
-            <div class="panel-group" id="accordion">
-              <div class="panel">
-                <div class="panel-heading">
-                  <p class="panel-title">
-                    Does Quant SC accept members on a rolling basis?
-                  </p>
-                </div>
-                <div>
-                  <div class="panel-body">
-                    <p>
-                      Due to the structure of our project teams, we are unable
-                      to accept members outside of the application cycle.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel">
-                <div class="panel-heading">
-                  <p class="panel-title">
-                    When and where does Quant SC meet?
-                  </p>
-                </div>
-                <div>
-                  <div class="panel-body">
-                    <p>
-                      Quant SC meets in person on campus, every Tuesday at 8pm.  
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel">
-                <div class="panel-heading">
-                  <p class="panel-title">
-                    Do I need prior finance experience to join Quant SC?
-                  </p>
-                </div>
-                <div>
-                  <div class="panel-body">
-                    <p>
-                      Prior knowledge of finance or economics is not expected
-                      or required.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel">
-                <div class="panel-heading">
-                  <p class="panel-title">
-                    I already have an idea in the works. Can I continue to
-                    build it?
-                  </p>
-                </div>
-                <div>
-                  <div class="panel-body">
-                    <p>
-                      Of course! We're happy to help you continue developing
-                      what you're passionate about. Our resources are at your
-                      disposal.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel">
-                <div class="panel-heading">
-                  <p class="panel-title">Do you accept graduate students?</p>
-                </div>
-                <div>
-                  <div class="panel-body">
-                    <p>
-                      Yes! We take both undergraduate and graduate students.
-                    </p>
-                  </div>
-                </div>
+              <div class="text-center my-4">
+                <img
+                  src="assets/imgs/placements.png"
+                  alt="Placements"
+                  class="img-fluid"
+                />
               </div>
             </div>
           </div>
-
-          <hr class="featurette-divider" />
-          <!-- /END THE FEATURETTES -->
         </div>
-        <!-- /.container -->
-      </div>
+      </section>
 
-      <!-- FOOTER -->
-      <footer class="container foot">
-        <p>
-          <a class="subtle-link cardinal-text" id="email" href="mailto:quantsc@usc.edu">Contact us</a>
-        </p>
-        <p>
-          <a class="subtle-link cardinal-text" href="https://www.instagram.com/quant.sc/" target="_blank"
-            rel="noopener noreferrer">Follow us on Instagram</a>
-        </p>
-        <p>
-          <a class="subtle-link cardinal-text" href="https://www.linkedin.com/company/quant-sc" target="_blank"
-            rel="noopener noreferrer">Follow us on LinkedIn</a>
-        </p>
-      </footer>
+      <section class="section page-section scroll-offset" id="apply">
+        <div class="main-content-wrapper">
+          <div class="container">
+            <div class="apply-content">
+              <h1 class="apply-title">Interested in Joining?</h1>
+              <div class="apply-heading-line"></div>
+              <p class="text-center mb-4">
+                We are excited to announce that Spring 2025 applications are now open. 
+                Click 
+                <a 
+                  href="https://forms.gle/8u4ytB1AhPin6FWq5" 
+                  class="apply-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  here
+                </a> 
+                to get started.
+              </p>
+              <ul class="apply-timeline">
+                <li><strong>Application Opens:</strong> January 16, 2025</li>
+                <li><strong>Application Due:</strong> January 26, 2025</li>
+                <li><strong>Round 1 Interviews:</strong> January 28–30, 2025</li>
+                <li><strong>Round 2 Interviews:</strong> January 31, 2025</li>
+              </ul>
+              <p class="text-center mb-4">
+                If you have any questions or concerns, please email us at 
+                <a 
+                  href="mailto:quantsc@usc.edu" 
+                  class="apply-link"
+                >
+                  quantsc@usc.edu
+                </a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page-section scroll-offset" id="faq">
+        <div class="main-content-wrapper">
+          <div class="container">
+            <div class="faq-content">
+              <h1 class="faq-title">Frequently Asked Questions</h1>
+              <div class="faq-heading-line"></div>
+              <div class="faq-item">
+                <h4 class="faq-question">Does Quant SC accept members on a rolling basis?</h4>
+                <p class="faq-answer">
+                  We only bring on new members during our official application cycle.
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4 class="faq-question">When and where does Quant SC meet?</h4>
+                <p class="faq-answer">
+                  We meet in person on campus every Tuesday at 8:00 PM. 
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4 class="faq-question">Do I need prior finance experience to join Quant SC?</h4>
+                <p class="faq-answer">
+                  We provide all the foundational training you need—no finance or economics background required.
+                </p>
+              </div>
+              <div class="faq-item">
+                <h4 class="faq-question">Does Quant SC accept graduate students?</h4>
+                <p class="faq-answer faq-answer-last">
+                  We welcome both undergraduate and graduate students.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-...your-hash..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <footer class="footer-full">
+      <div class="footer-social">
+        <!-- Instagram -->
+        <a 
+          href="https://www.instagram.com/quant.sc" 
+          class="social-link" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a 
+          href="https://www.linkedin.com/company/quant-sc" 
+          class="social-link" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <!-- Email -->
+        <a 
+          href="mailto:quantsc@usc.edu" 
+          class="social-link" 
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p class="footer-copy">
+        &copy; 2025 Quant SC. All rights reserved.
+      </p>
+    </footer>
   </div>
 
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+  ></script>
   <script src="js/main-2.0.0.js"></script>
 </body>
-
 </html>
